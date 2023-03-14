@@ -1,0 +1,17 @@
+{
+  "name": "@zhzwz/normalize.css",
+  "version": "0.1.0",
+  "main": "dist/normalize.css",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm i && esbuild --bundle normalize.css --minify --outfile=dist/normalize.min.css",
+    "clean": "rimraf node_modules dist"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.11",
+    "rimraf": "^4.4.0"
+  }
+}

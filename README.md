@@ -1,6 +1,15 @@
-# normalize.css
+# @zhzwz/normalize.css
 
-## Inspired by:
+## Installation
+
+### npm
+
+```bash
+npm install --save-dev @zhzwz/normalize.css
+```
+
+## Inspired By
 
 - [normalize.css](https://github.com/necolas/normalize.css/tree/master)
 - [modern-css-reset](https://github.com/Andy-set-studio/modern-css-reset)
+- [barebones css for fluid images](https://www.zachleat.com/web/fluid-images/)
