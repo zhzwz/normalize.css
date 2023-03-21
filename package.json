@@ -2,6 +2,7 @@
   "name": "@zhzwz/normalize.css",
   "version": "0.1.1",
   "type": "module",
+  "main": "normalize.min.css",
   "style": "normalize.css",
   "files": [
     "normalize.css",
