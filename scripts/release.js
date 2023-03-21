@@ -13,16 +13,16 @@ if (/^[\d]{1,}\.[\d]{1,}\.[\d]{1,}$/.test(version)) {
 }
 
 async function commit() {
-  const { stderr, stdout } = await command(`pnpm version ${version} -m "release: version ${version}"`)
-  if (stderr) console.error(chalk.red(stderr))
+  const { stdout, stderr } = await command(`pnpm version ${version} -m "release: version ${version}"`)
   if (stdout) {
     console.log(chalk.green(stdout))
     release()
   }
+  if (stderr) console.error(chalk.red(stderr))
 }
 
 async function release() {
-  const { stderr, stdout } = await command('pnpm publish --access public')
-  if (stderr) console.error(chalk.red(stderr))
+  const { stdout, stderr } = await command('pnpm publish --access public')
   if (stdout) console.log(chalk.green(stdout))
+  if (stderr) console.error(chalk.red(stderr))
 }
