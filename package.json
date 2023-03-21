@@ -10,16 +10,13 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "clean": "rimraf node_modules normalize.min.css",
+    "clean": "rimraf node_modules",
     "build": "pnpm run clean && pnpm install && esbuild --bundle normalize.css --minify --outfile=normalize.min.css",
-    "publish": "node ./scripts/publish.js"
+    "release": "node ./scripts/release.js"
   },
   "devDependencies": {
     "chalk": "^5.2.0",
     "esbuild": "^0.17.12",
     "rimraf": "^4.4.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
