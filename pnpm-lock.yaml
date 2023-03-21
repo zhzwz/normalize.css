@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  chalk: ^5.2.0
   esbuild: ^0.17.12
   rimraf: ^4.4.0
 
 devDependencies:
+  chalk: 5.2.0
   esbuild: 0.17.12
   rimraf: 4.4.0
 
@@ -216,6 +218,11 @@ packages:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
+    dev: true
+
+  /chalk/5.2.0:
+    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /esbuild/0.17.12:
