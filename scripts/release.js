@@ -23,6 +23,15 @@ async function commit() {
 
 async function release() {
   const { stdout, stderr } = await command('pnpm publish --access public')
-  if (stdout) console.log(chalk.green(stdout))
+  if (stdout) {
+    console.log(chalk.green(stdout))
+    tag()
+  }
   if (stderr) console.error(chalk.red(stderr))
+}
+
+async function tag() {
+  const { stdout, stderr } = await command(`git push --tags`)
+  if (stdout) console.log(stdout)
+  if (stderr) console.error(stderr)
 }
