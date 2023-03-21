@@ -1,6 +1,6 @@
 {
   "name": "@zhzwz/normalize.css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "style": "normalize.css",
   "files": [
