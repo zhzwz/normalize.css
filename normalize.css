@@ -64,3 +64,8 @@ iframe {
 [id] {
   scroll-margin-top: 2ex;
 }
+
+/* Vue: Used to hide un-compiled template until it is ready. */
+[v-cloak] {
+  display: none;
+}
